@@ -1,0 +1,114 @@
+/* admin_dashboard.css */
+body {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    background-size: 400% 400%; /* Увеличиваем размер градиента */
+    animation: gradientAnimation 10s ease infinite; /* Анимация для плавного изменения градиента */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeInContainer 1s ease-in-out; /* Анимация для контейнера */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInContainer 1s ease-in-out; /* Анимация для таблицы */
+}
+
+table th {
+    background-color: #a6c1ee;
+    color: #fff;
+    padding: 15px;
+    font-size: 16px;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center; /* Выравниваем содержимое ячеек по центру */
+    font-size: 16px;
+}
+
+table td.actions {
+    display: flex;
+    justify-content: center; /* Выравниваем кнопки по центру */
+    gap: 15px; /* Увеличиваем промежуток между кнопками */
+}
+
+.approve-btn, .reject-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    display: inline-block;
+}
+
+.approve-btn {
+    background-color: #28a745; /* Зеленый цвет для одобрения */
+    color: white;
+}
+
+.approve-btn:hover {
+    background-color: #218838; /* Темнее зеленый при наведении */
+}
+
+.reject-btn {
+    background-color: #dc3545; /* Красный цвет для отклонения */
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #c82333; /* Темнее красный при наведении */
+}
+
+.no-messages {
+    color: #555;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
